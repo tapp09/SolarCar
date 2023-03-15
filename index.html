@@ -38,7 +38,7 @@
                     <a href="#" class="nav__links">Contato</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Login</a>
+                    <a href="#" onclick="openLoginForm()" class="nav__links caixa__login login">Login</a>
                 </li>
                 <li class="nav__items">
                     <a href="#" class="nav__links">Conta</a>
@@ -51,6 +51,29 @@
                 <img src="./images/menu.svg" class="nav__img">
             </div>
         </nav>
+        <div id="loginForm" class="modal">
+            <div class="modalcont">
+              <span class="close" onclick="closeLoginForm()">&times;</span>
+              <h2>Login</h2>
+                <form>
+                    <div class="caixa__login-input">
+                        <input type="text" required />
+                        <label>Email</label>
+                    </div>
+                    <div class="caixa__login-input">
+                        <input type="password" required />
+                        <label>Senha</label>
+                    </div>
+                    <a href="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Acessar
+                    </a>
+                </form>
+            </div>
+          </div>
 
         <section class="hero__container container">
             <h1 class="hero__title">O futuro chegou e é elétrico - junte-se a nós nessa jornada sustentável.</h1>
@@ -302,6 +325,8 @@
     <script src="./js/slider.js"></script>
     <script src="./js/questions.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/pop.js"></script>
+    <script src="./js/animlog.js"></script>
 </body>
 
 </html>
